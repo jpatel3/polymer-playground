@@ -1,0 +1,19 @@
+{
+  "name": "Poly-Alert",
+  "version": "0.0.0",
+  "authors": [
+    "jaimin patel <jaimin9999@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "~0.6.0",
+    "polymer": "~0.8.0"
+  }
+}
