@@ -27,7 +27,7 @@
     && 'content' in document.createElement('template')) {
       // Native WC support. Do nothing
     } else {
-      document.write('<script src="/bower_components/webcomponentsjs/webcomponents.js"><\/script>');
+      document.write('<script src="bower_components/webcomponentsjs/webcomponents.js"><\/script>');
     }
   </script>
   <link rel="import" href="elements.html">
@@ -58,8 +58,8 @@
 			<div flex>My App</div>
 		</core-toolbar>
 		<main>
-			<more-route-selector>
-				<<core-pages selected="0">
+			<more-route-selector selectedParams="{{params}}">
+				<core-pages selected="0">
 				  <section route="home">
 				  	<h1>Home</h1>
 				  	<div>This is the home section</div>
@@ -68,6 +68,14 @@
 				  <section route="users">
 				  	<h1>Users</h1>
 				  	<div>This is the users section</div>
+				  	<a href="{{urlFor('user-info', {name: 'Rob'})}}">
+				  		Rob
+				  	</a>
+				  </section>
+				  
+				  <section route="user-info">
+				  	<h1>User: {{params.name}}</h1>
+				  	<div>This is {{params.name}}'s section</div>
 				  </section>
 
 				  <section route="contact">
