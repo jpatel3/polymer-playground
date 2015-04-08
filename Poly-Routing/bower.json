@@ -1,0 +1,19 @@
+{
+  "name": "Poly-Routing",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jpatel3/polymer-playground",
+  "authors": [
+    "jaimin patel <jaimin9999@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "more-routing": "Polymore/more-routing#~0.5.0"
+  }
+}
