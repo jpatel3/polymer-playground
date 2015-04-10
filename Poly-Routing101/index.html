@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="">
+
+  <!-- Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Chrome / Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="black">
+  <link rel="icon" href="icon.png">
+
+  <!-- Safari / iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+  <!-- Web Components -->
+  <script>
+    if ('registerElement' in document
+    && 'createShadowRoot' in HTMLElement.prototype
+    && 'import' in document.createElement('link')
+    && 'content' in document.createElement('template')) {
+      // Native WC support. Do nothing
+    } else {
+      document.write('<script src="bower_components/webcomponentsjs/webcomponents.js"><\/script>');
+    }
+  </script>
+  <link rel="import" href="elements.html">
+</head>
+<body unresolved>
+  <template is="auto-binding" id="app">
+
+  <core-drawer-panel>
+    <core-header-panel drawer>
+      <core-toolbar>Menu</core-toolbar>
+       <core-menu selected="{{route}}" valueattr="data-route">
+      <core-item data-route="home" label="">
+        <a href="/">Home</a>
+      </core-item>
+      <core-item data-route="portfolio" label="">
+        <a href="/portfolio">Portfolio</a>
+      </core-item>
+      <core-item data-route="contact" label="">
+        <a href="/contact">Contact</a>
+      </core-item>
+    </core-menu>
+
+    </core-header-panel>
+    <core-header-panel main>
+      <core-toolbar>
+        <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
+        <div flex>My App</div>
+      </core-toolbar>
+      <div class="container" fit layout vertical>
+        <core-pages selected="{{route}}" valueattr="data-route">
+      <section data-route="home">
+        <h1>Home</h1>
+        <div>Home content</div>
+      </section>
+
+      <section data-route="portfolio">
+        <h1>Portfolio</h1>
+        <div>Portfolio content</div>
+      </section>
+      
+      <section data-route="contact">
+        <h1>Contact</h1>
+        <div>Contact content</div>
+      </section>
+    </core-pages>
+      </div>
+    </core-header-panel>
+  </core-drawer-panel>
+
+  </template>
+  <script src="bower_components/page.js/page.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
