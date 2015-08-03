@@ -27,20 +27,14 @@
     && 'content' in document.createElement('template')) {
       // Native WC support. Do nothing
     } else {
-      document.write('<script src="/bower_components/webcomponentsjs/webcomponents.js"><\/script>');
+	    // shedy dom
+      document.write('<script src="/bower_components/webcomponentsjs/webcomponents-lite.js"><\/script>');
     }
   </script>
+  <link rel="import" href="google-map.html">
 </head>
 <body unresolved>
-  <ul>
-  <li><a href="/Poly-Markdown/index.html">Poly Markdown</a></li>
-  <li><a href="/Poly-Alert/index.html">Poly Alert</a></li>
-  <li><a href="/Poly-Core-List/index.html">Poly Core List</a></li>
-  <li><a href="/Poly-Routing/index.html">Poly More Routing</a></li>
-  <li><a href="/Poly-Routing1101/index.html">Poly Routing 101</a></li>
-  <li><a href="/Core-Pages/index.html">Core Pages</a></li>
-  <li><a href="/Poly-Map/index.html">Maps</a></li>
-  </ul>
-https://www.youtube.com/watch?v=82LfXCeuaOo&list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN&index=6
+	<!-- Use element -->
+  <google-map lat="37.790" long="-122.390"></google-map>  
 </body>
 </html>

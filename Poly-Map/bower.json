@@ -1,0 +1,21 @@
+{
+  "name": "Poly-Map",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jpatel3/polymer-playground",
+  "authors": [
+    "jaimin patel <jaimin9999@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "~0.6.0",
+    "polymer": "~0.8.0",
+    "google-apis": "GoogleWebComponents/google-apis#^0.4.4"
+  }
+}

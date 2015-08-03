@@ -27,20 +27,13 @@
     && 'content' in document.createElement('template')) {
       // Native WC support. Do nothing
     } else {
-      document.write('<script src="/bower_components/webcomponentsjs/webcomponents.js"><\/script>');
+      // shedy dom
+      document.write('<script src="/bower_components/webcomponentsjs/webcomponents-lite.js"><\/script>');
     }
   </script>
 </head>
 <body unresolved>
-  <ul>
-  <li><a href="/Poly-Markdown/index.html">Poly Markdown</a></li>
-  <li><a href="/Poly-Alert/index.html">Poly Alert</a></li>
-  <li><a href="/Poly-Core-List/index.html">Poly Core List</a></li>
-  <li><a href="/Poly-Routing/index.html">Poly More Routing</a></li>
-  <li><a href="/Poly-Routing1101/index.html">Poly Routing 101</a></li>
-  <li><a href="/Core-Pages/index.html">Core Pages</a></li>
-  <li><a href="/Poly-Map/index.html">Maps</a></li>
-  </ul>
-https://www.youtube.com/watch?v=82LfXCeuaOo&list=PLOU2XLYxmsII5c3Mgw6fNYCzaWrsM3sMN&index=6
+  <link rel="import" href="polymer-element.html">
+  <my-counter counter="10">Points</my-counter>
 </body>
 </html>

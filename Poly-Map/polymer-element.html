@@ -1,0 +1,23 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<!-- Define element -->
+<!-- <dom-module id="quick-alert"> -->
+<polymer-element name="my-counter" attributes="counter">
+	<template>
+		<style type="text/css"></style>
+		<div id="label"><content></content></div>
+		Value: <span id="counterVal">{{counter}}</span></br>
+		<button on-tap="{{increment}}">Increment</button>
+	</template>
+	<script>
+		Polymer({
+			counter: 0,
+			counterChanged: function(){
+				this.$.counterVal.classList.add('highlight');
+			},
+			increment: function(){
+				this.counter++;
+			}
+		});
+	</script>
+</polymer-element>

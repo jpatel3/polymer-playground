@@ -1,0 +1,30 @@
+{
+  "name": "mark-down",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jpatel3/polymer-playground",
+  "authors": [
+    "jaimin patel <jaimin9999@gmail.com>"
+  ],
+  "description": "A polymer element for rendering markdown",
+  "main": "mark-down.html",
+  "keywords": [
+    "markdown",
+    "polymer",
+    "web",
+    "components",
+    "custom",
+    "elements"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.0.8",
+    "marked": "~0.3.5"
+  }
+}
